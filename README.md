@@ -10,7 +10,7 @@ Running
 
 Example invocation:
 ```
-docker run -it --rm rad_eap_test -m WPA-EAP -e PEAP -H 192.168.1.10 -S secret123 -u test@example.com -A anonymous@example.com -p testpassword -s eduroam
+docker run -it --rm rad_eap_test -m WPA-EAP -e PEAP -H 192.168.1.10 -P 1812 -S secret123 -u test@example.com -A anonymous@example.com -p testpassword -s eduroam
 ```
 
 All options
