@@ -5,7 +5,7 @@
  fi
  
 +if [ -n "$SSID" ] ; then
-+	EXTRA_EAPOL_ARGS="$EXTRA_EAPOL_ARGS -N30:s:'$MAC:$SSID'"
++	EXTRA_EAPOL_ARGS="$EXTRA_EAPOL_ARGS -N30:s:'${MAC//:/-}:$SSID'"
 +fi
 +
  # generation of configuration
